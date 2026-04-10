@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC calc</title>
+    <link rel="stylesheet" href="/css/imcstyle.css">
+    <style>
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a>
+        </ul>
+        <ul>
+            <li><a href="calculadorakcal.html">Calculadora de calorias</a></li>
+        </ul>
+        <ul>
+            <li><a href="">Calculadora de imc</a></li>
+        </ul>
+        <ul>
+            <li><a href="exercicios.html">Exercícios e músculos</a></li>
+        </ul>
+    </nav>
+
+    <div class="masterdiv">
+        <div class="imcalc">
+            <h1>Calculadora de IMC: </h1>
+
+            <p>Insira seu peso(<i>kg</i>):</p>
+            <input type="number" id="peso" placeholder="peso">
+            <p>Insira sua altura(<i>m</i>): </p>
+            <input type="number" id="altura" placeholder="altura">
+            <br/>
+            <button onclick="imccalc()" class="calcbtn">Calcular</button>
+
+            <p id="result"></p>
+            <p id="aoa"></p>    
+        </div>
+
+        <div class="formula">
+            <h1>Fomula do IMC</h1>
+            <p>IMC significa "indice de massa corporal".<br/>Não é tão adequada, mas ajuda na maioria dos casos.<br/>A formula do imc se da por:<br/> <var>p/a<sup>2</sup></var><br/><br/>sendo:<br/><var>p</var> = peso(em kg)<br/><var>a</var> = altura(em metros)</p>
+        </div>
+
+        <div class="imgbody">
+            <img src="assets/tabela_imc.jpg" alt="Tabela do IMC">
+        </div>
+    </div>
+
+</body>
+ <script src="js/imc.js"></script>
+</html>

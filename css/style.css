@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(68, 139, 39);
+    font-family: Verdana,Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    background-color: rgb(10, 67, 4);
+    border-style: solid;
+    border-color: antiquewhite;
+    font-size: x-large;
+    color: rgb(10, 67, 4);
+    padding: 10px;
+    border-radius: 50px;
+    margin: 10px;
+}
+a{
+    font-size: 30px;
+    background-color: rgba(0, 104, 14, 0.406);
+    color: beige;
+    padding: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+a:hover{
+    background-color: rgb(195, 255, 197);
+    transition-duration: 250ms;
+    color: black;
+}

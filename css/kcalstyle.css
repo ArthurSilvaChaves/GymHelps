@@ -1,0 +1,118 @@
+body
+{
+    background-color: rgb(149, 13, 13);
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    background-color: rgb(67, 4, 4);
+    border-style: solid;
+    border-color: antiquewhite;
+    font-size: x-large;
+    color: rgb(67, 4, 4);
+    padding: 10px;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+a{
+    font-size: 30px;
+    background-color: rgba(104, 0, 0, 0.406);
+    color: beige;
+    padding: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+a:hover{
+    background-color: rgb(255, 195, 195);
+    transition-duration: 250ms;
+    color: black;
+}
+
+p{
+    font-size: larger;
+    cursor: default;
+}
+
+input{
+    font-size: 35px;
+    border: 5px #ff0000;
+    border-radius: 10px;
+    width: 150px;
+    border-style: solid;
+    background-color: #730000;
+    color: white;
+}
+
+input:hover{
+    border: 5px #ff4848;
+    border-style: solid;
+}
+
+select{
+    font-size: x-large;
+    background-color: #9a0a0a;
+    border-style: none;
+    color: antiquewhite;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+select:hover{
+    background-color: #ff0000;
+    transition-duration: 250ms;
+}
+
+h1{
+    font-size: 28px;
+    color: antiquewhite;
+    background-color: #430404;
+    width: fit-content;
+    padding: 10px;
+    border: rgb(255, 255, 255) solid;
+    border-radius: 50px;
+    cursor: default;
+}
+
+
+
+.calcbutton{
+    margin-top: 10px;
+    font-size: x-large;
+    cursor: pointer;
+    border:solid white;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: #730000;
+    color:white;
+}
+
+.calcbutton:hover{
+    background-color: #ff0000;
+    transition-duration: 200ms;
+}
+
+.calc{
+    background-color: #43040f;
+    padding: 15px;
+    width: fit-content;
+    border: white solid;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.information{
+    background-color: #43040f;
+    padding: 15px;
+    width: fit-content;
+    border: white solid;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.tmbcalc
+{
+    display: flex;
+}

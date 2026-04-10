@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kcalculadora</title>
+    <link rel="stylesheet" href="/css/kcalstyle.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a>
+        </ul>
+        <ul>
+            <li><a href="calculadorakcal.html">Calculadora de calorias</a></li>
+        </ul>
+        <ul>
+            <li><a href="calculadorimc.html">Calculadora de imc</a></li>
+        </ul>
+        <ul>
+            <li><a href="exercicios.html">Exercícios e músculos</a></li>
+        </ul>
+    </nav>
+
+    <div class="tmbcalc">
+        <div class="calc">
+            <h1>Gasto metabolico basal e TDEE</h1>
+
+            <p>Genero: </p>
+            <select name="gender" id="choice">
+                <option value="homem">Masculino</option>
+                <option value="mulher">Feminino</option>
+            </select>
+
+            <p>Fator de atividade: </p>
+            <select name="taxaatividade" id="atividade">
+                <option value="sedentario">Sedentario</option>
+                <option value="lativo">Levemente Ativo</option>
+                <option value="mativo">Moderadamente Ativo</option>
+                <option value="muiativo">Muito Ativo</option>
+                <option value="eativo">Extremamente Ativo</option>
+            </select>
+            
+            <p>Peso<i>(kg)</i>:</p>
+            <input type="number" placeholder="peso" id="peso">
+
+            <p>Altura<i>(cm)</i>:</p>
+            <input type="number" placeholder="altura" id="altura">
+
+            <p>Idade <i>(anos)</i>:</p>
+            <input type="number" placeholder="idade" id="idade">
+            <br/><br/>
+            
+            <button onclick="tmbcalc()" class="calcbutton">Calcular</button>
+        
+            <p id="resulttmb"></p>
+            <p id="resulttdee"></p>
+        </div>
+
+        <div class="information">
+            <h1>Sobre TMB e TDEE</h1>
+
+            <p>O TMB(Taxa Metabólica Basal), é a quantidade de calorias  necessárias para manter órgãos, respiração e circulação funcionais em repouso. existem alguns modos para calcular este gasto, mas o usado para esse site é a fórmula comum  de Mifflin-St Jeor, que se dá por:</p>
+            <p>TMB masculino = <var>(10 x p) + (6.25 x a) - (5 x i) + 5</var></p>
+            <p>TMB feminino = <var>(10 x p) + (6.25 x a) - (5 x i) - 161</var></p>
+            <p>sendo: <br/> <var>p</var> = peso em kilogramas <br/><var>a</var> = altura em centimetros <br/> <var>i</var> = idade em anos</p>
+        
+            <hr/>
+
+            <p>Já o TDEE(Gasto Energético Diário Total) é o seu gasto metabólico basal multiplicado por um fator de atividade física, os valores para cada nivel de atividade são: </p>
+
+            <p>Sedentário =  1.2</p>
+            <p>Levemente Ativo = 1.375</p>
+            <p>Moderadamente Ativo = 1.55</p>
+            <p>Muito Ativo = 1.725</p>
+            <p>Extremamente ativo (normalmente atletas de alto rendimento) = 1.9</p>
+        
+            <hr/>
+            <p>Com o valor de calorias, caso quiser fazer um superávit calorico(bulking), é só adicionar algumas calorias, caso contrário e quiser fazer um déficit calórico (cutting) é só retirar algumas calorias, e não esquecer dos treinos!</p>    
+        </div>
+    </div>
+</body>
+<script src="js/kcal.js"></script>
+</html>
