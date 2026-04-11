@@ -74,7 +74,7 @@ a:hover{
 
 .accordion-content a{
     background-color: transparent;
-    transition: 0.3s;
+    transition: 1s;
 }
 
 .accordion-content a:hover{
@@ -82,7 +82,7 @@ a:hover{
 }
 
 .accordion-content.active{
-    max-height: max-content;
+    max-height: fit-content;
 }
 
 img{
