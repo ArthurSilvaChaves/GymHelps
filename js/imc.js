@@ -10,6 +10,7 @@ function imccalc(){
         
         if(x <= 18.5){
             abaixoouacima.textContent = "Voce esta em excesso de magreza"
+            console.log("funcionou")
         } else if(x > 18.5 && x <= 25){
             abaixoouacima.textContent = "Voce esta com peso normal"
         } else if (x > 25 && x <= 30){

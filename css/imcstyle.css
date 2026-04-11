@@ -97,8 +97,11 @@ input:hover{
     margin: 10px;
 }
 
+img{
+    width: 500px;
+}
+
 .imgbody{
-    margin: 10px;
     padding: 100px;
     border: #ffffff solid;
     background-color: #0f0443;

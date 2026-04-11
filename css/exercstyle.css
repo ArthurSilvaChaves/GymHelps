@@ -82,7 +82,7 @@ a:hover{
 }
 
 .accordion-content.active{
-    max-height: 2000px;
+    max-height: max-content;
 }
 
 img{
