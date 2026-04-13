@@ -1,119 +1,167 @@
-body{
+body {
     background-color: rgb(0, 94, 94);
     font-family: Verdana, Arial, Helvetica, sans-serif;
     color: white;
+    margin: 0;
 }
 
-.navbar{
+
+.navbar {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
     background-color: #0f0443;
-    border-style: solid;
-    border-color: antiquewhite;
-    font-size: x-large;
-    color: rgb(15, 4, 67);
+    color: #0f0443;
+    border: 2px solid antiquewhite;
+
+    font-size: 1.5rem;
     padding: 10px;
-    border-radius: 50px;
+    border-radius: 20px;
     margin: 10px;
 }
 
-a{
-    font-size: 30px;
+
+a {
+    font-size: 1.2rem;
     background-color: rgba(0, 19, 104, 0.406);
     color: beige;
-    padding: 15px;
-    border-radius: 20px;
+
+    padding: 10px 15px;
+    border-radius: 15px;
     text-decoration: none;
+
+    transition: 250ms;
 }
 
-a:hover{
+a:hover {
     background-color: rgb(195, 201, 255);
-    transition-duration: 250ms;
     color: black;
 }
 
-.imcalc{
+
+.imcalc,
+.formula {
     background-color: #0f0443;
-    padding: 10px;
-    width: fit-content;
-    border: white solid;
+    padding: 15px;
+
+    width: 100%;
+    max-width: 400px;
+
+    border: 2px solid white;
     border-radius: 15px;
-    margin: 10px;
+    margin: 10px auto;
 }
 
-h1{
-    font-size: 28px;
+
+h1 {
+    font-size: 1.5rem;
     color: antiquewhite;
     background-color: #0f0443;
+
     width: fit-content;
     padding: 10px;
-    border: rgb(255, 255, 255) solid;
-    border-radius: 50px;
-    cursor: default;
-
+    border: 2px solid white;
+    border-radius: 20px;
 }
 
-p{
-    font-size: larger;
-    cursor: default;
+
+p {
+    font-size: 1rem;
 }
 
-input{
-    font-size: 35px;
-    border: 5px #0015ff;
+
+input {
+    font-size: 1.2rem;
+    border: 2px solid #0015ff;
     border-radius: 10px;
-    width: 150px;
-    border-style: solid;
+
+    width: 100%;
+    max-width: 200px;
+
+    padding: 8px;
     background-color: #000a73;
     color: white;
-} 
+}
 
-input:hover{
+input:hover {
     border-color: #ffffff;
-    transition-duration: 250ms;
 }
 
-.calcbtn
-{
+
+.calcbtn {
     margin-top: 10px;
-    font-size: x-large;
+    font-size: 1.2rem;
     cursor: pointer;
-    border:solid white;
-    border-radius: 50px;
+
+    border: 2px solid white;
+    border-radius: 20px;
     padding: 10px;
+
     background-color: #000a73;
-    color:white;
+    color: white;
 }
-.calcbtn:hover{
+
+.calcbtn:hover {
     background-color: #001aff;
-    transition-duration: 200ms;
 }
 
-.formula{
-    background-color: #0f0443;
-    padding: 10px;
-    width: fit-content;
-    border: white solid;
-    border-radius: 15px;
-    margin: 10px;
+
+img {
+    width: 100%;        
+    max-width: 500px;   
+    height: auto;
 }
 
-img{
-    width: 500px;
-}
 
-.imgbody{
-    padding: 100px;
-    border: #ffffff solid;
+.imgbody {
+    padding: 20px; 
+    border: 2px solid #ffffff;
     background-color: #0f0443;
     border-radius: 20px;
+    margin: 10px auto;
+    max-width: 600px;
 }
 
-.imgbody:hover{
+.imgbody:hover {
     border-color: #b2b8ff;
-    border-radius: 20px;
-    transition-duration: 250ms;
+    transition: 250ms;
 }
 
-.masterdiv{
+
+.masterdiv {
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    gap: 20px;
+}
+
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .masterdiv {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .imgbody {
+        padding: 10px; 
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
 }

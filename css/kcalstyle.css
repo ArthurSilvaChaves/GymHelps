@@ -1,118 +1,160 @@
-body
-{
+body {
     background-color: rgb(149, 13, 13);
     font-family: Verdana, Arial, Helvetica, sans-serif;
     color: white;
+    margin: 0;
 }
 
-.navbar{
+
+.navbar {
     display: flex;
-    background-color: rgb(67, 4, 4);
-    border-style: solid;
-    border-color: antiquewhite;
-    font-size: x-large;
-    color: rgb(67, 4, 4);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background-color: #430404;
+    color: #430404;
+    border: 2px solid antiquewhite;
+
+    font-size: 1.5rem;
     padding: 10px;
-    border-radius: 50px;
+    border-radius: 20px;
     margin: 10px;
+    gap: 10px;
 }
 
-a{
-    font-size: 30px;
+
+a {
+    font-size: 1.2rem;
     background-color: rgba(104, 0, 0, 0.406);
     color: beige;
-    padding: 15px;
-    border-radius: 20px;
+
+    padding: 10px 15px;
+    border-radius: 15px;
     text-decoration: none;
+
+    transition: 250ms;
 }
-a:hover{
+
+a:hover {
     background-color: rgb(255, 195, 195);
-    transition-duration: 250ms;
     color: black;
 }
 
-p{
-    font-size: larger;
+p {
+    font-size: 1rem;
     cursor: default;
 }
 
-input{
-    font-size: 35px;
-    border: 5px #ff0000;
+
+input {
+    font-size: 1.2rem;
+    border: 2px solid #ff0000;
     border-radius: 10px;
-    width: 150px;
-    border-style: solid;
+
+    width: 100%;
+    max-width: 200px;
+
+    padding: 8px;
     background-color: #730000;
     color: white;
 }
 
-input:hover{
-    border: 5px #ff4848;
-    border-style: solid;
+input:hover {
+    border-color: #ff4848;
 }
 
-select{
-    font-size: x-large;
+
+select {
+    font-size: 1.1rem;
     background-color: #9a0a0a;
-    border-style: none;
+    border: none;
     color: antiquewhite;
-    border-radius: 50px;
+
+    border-radius: 20px;
     padding: 10px;
+    width: 100%;
+    max-width: 220px;
 }
 
-select:hover{
+select:hover {
     background-color: #ff0000;
-    transition-duration: 250ms;
+    transition: 250ms;
 }
 
-h1{
-    font-size: 28px;
+h1 {
+    font-size: 1.5rem;
     color: antiquewhite;
     background-color: #430404;
+
     width: fit-content;
     padding: 10px;
-    border: rgb(255, 255, 255) solid;
-    border-radius: 50px;
-    cursor: default;
+    border: 2px solid white;
+    border-radius: 20px;
 }
 
 
-
-.calcbutton{
+.calcbutton {
     margin-top: 10px;
-    font-size: x-large;
+    font-size: 1.2rem;
     cursor: pointer;
-    border:solid white;
-    border-radius: 50px;
+
+    border: 2px solid white;
+    border-radius: 20px;
     padding: 10px;
+
     background-color: #730000;
-    color:white;
+    color: white;
 }
 
-.calcbutton:hover{
+.calcbutton:hover {
     background-color: #ff0000;
-    transition-duration: 200ms;
+    transition: 200ms;
 }
 
-.calc{
+
+.calc,
+.information {
     background-color: #43040f;
     padding: 15px;
-    width: fit-content;
-    border: white solid;
+
+    width: 100%;
+    max-width: 400px;
+
+    border: 2px solid white;
     border-radius: 15px;
-    margin: 10px;
+    margin: 10px auto;
 }
 
-.information{
-    background-color: #43040f;
-    padding: 15px;
-    width: fit-content;
-    border: white solid;
-    border-radius: 15px;
-    margin: 10px;
-}
 
-.tmbcalc
-{
+.tmbcalc {
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    gap: 20px;
+}
+
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .tmbcalc {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
 }
