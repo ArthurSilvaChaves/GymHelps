@@ -24,7 +24,7 @@ body {
 
 
 a {
-    font-size: 1.2rem;
+    font-size: 2rem;
     background-color: rgba(0, 19, 104, 0.406);
     color: beige;
 
@@ -147,6 +147,7 @@ img {
     }
 
     a {
+        font-size: 1.3rem;
         width: 100%;
         text-align: center;
     }
