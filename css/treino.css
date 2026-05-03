@@ -1,0 +1,107 @@
+body {
+    background-color: rgb(119, 39, 139);
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+
+    background-color: rgb(58, 4, 67);
+    color: rgb(57, 4, 67);
+    border: 2px solid antiquewhite;
+
+    font-size: 1.5rem; 
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+    gap: 10px; 
+}
+
+
+a {
+    font-size: 2rem; 
+    background-color: rgba(99, 0, 104, 0.406);
+    color: beige;
+
+    padding: 10px 15px;
+    border-radius: 15px;
+    text-decoration: none;
+
+    transition: 250ms;
+}
+
+a:hover {
+    background-color: rgb(255, 195, 254);
+    color: black;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.519);
+}
+
+#semana{
+    font-size: 1.5rem;
+    color: white;
+    display: grid;
+    background-color: rgb(58, 4, 67);
+    margin: 10px;
+    padding: 10px;
+    gap: 10px;
+    width: max-content;
+    border: rgb(255, 195, 254) solid;
+}
+
+h2{
+    font-size: 1.5rem;
+    color: antiquewhite;
+    background-color: #350443;
+
+    width: fit-content;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+button{
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    border: none;
+    background: rgba(99, 0, 104, 0.406);
+    transition: 250ms;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(255, 195, 254);
+    color: black;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.519);
+}
+
+input{
+    font-size: 1.2rem;
+    border: 2px solid #ff00ff;
+    border-radius: 10px;
+
+    width: 100%;
+    max-width: 250px;
+
+    padding: 8px;
+    background-color: #6d0073;
+    color: white;
+}
+
+@media (max-width: 768) {
+    .navbar {
+        flex-direction: column; 
+        align-items: stretch;
+    }
+
+    a {
+        font-size: 1.3rem;
+        text-align: center;
+        width: 100%; 
+    }
+}

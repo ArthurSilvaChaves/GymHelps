@@ -39,6 +39,7 @@ a {
 a:hover {
     background-color: rgb(255, 195, 195);
     color: black;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.519);
 }
 
 p {
