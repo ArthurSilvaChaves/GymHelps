@@ -44,7 +44,7 @@ function addexerc(botao){
         <input placeholder="series">
         <input placeholder="repeticoes">
         <input placeholder="carga">
-        <button onclick="this.parentElement.remove()">X</button>
+        <button onclick="this.parentElement.remove()" class="addbtn">X</button>
     `;
 
     ol.appendChild(li)
@@ -64,5 +64,3 @@ dias.forEach(dia => {
 
     container.appendChild(div);
 })
-
-

@@ -49,7 +49,8 @@ a:hover {
     padding: 10px;
     gap: 10px;
     width: max-content;
-    border: rgb(255, 195, 254) solid;
+    border: rgb(255, 195, 254) solid 2px;
+    border-radius: 20px;
 }
 
 h2{
@@ -91,6 +92,29 @@ input{
     padding: 8px;
     background-color: #6d0073;
     color: white;
+    transition: 250ms;
+}
+
+input:hover{
+    border: 2px solid #ffabff;
+}
+
+.addbtn{
+    margin-top: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+    border-radius: 20px;
+    padding: 20px;
+
+    background-color: #c20000;
+    color: white;
+}
+
+.addbtn:hover{
+    background-color: rgb(255, 156, 156);
+    color: black;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.519);
 }
 
 @media (max-width: 768) {
