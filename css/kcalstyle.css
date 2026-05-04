@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(149, 13, 13);
+    background-color: #82000B;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     color: white;
     margin: 0;
@@ -12,8 +12,8 @@ body {
     align-items: center;
     flex-wrap: wrap;
 
-    background-color: #430404;
-    color: #430404;
+    background-color: #811400;
+    color: #811400;
     border: 2px solid antiquewhite;
 
     font-size: 1.5rem;
@@ -31,6 +31,7 @@ a {
 
     padding: 10px 15px;
     border-radius: 15px;
+    border: rgba(104, 0, 0, 0.406) solid;
     text-decoration: none;
 
     transition: 250ms;
@@ -86,7 +87,7 @@ select:hover {
 h1 {
     font-size: 1.5rem;
     color: antiquewhite;
-    background-color: #430404;
+    background-color: #771200;
 
     width: fit-content;
     padding: 10px;
@@ -116,7 +117,7 @@ h1 {
 
 .calc,
 .information {
-    background-color: #43040f;
+    background-color: #811400;
     padding: 15px;
 
     width: 100%;

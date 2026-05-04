@@ -30,6 +30,7 @@ a {
 
     padding: 10px 15px;
     border-radius: 15px;
+    border: rgba(255, 149, 0, 0.406) solid;
     text-decoration: none;
 
     transition: 250ms;

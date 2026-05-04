@@ -12,8 +12,8 @@ body {
     justify-content: center;
     gap: 10px;
 
-    background-color: #0f0443;
-    color: #0f0443;
+    background-color: #000A81;
+    color: #000A81;
     border: 2px solid antiquewhite;
 
     font-size: 1.5rem;
@@ -30,6 +30,7 @@ a {
 
     padding: 10px 15px;
     border-radius: 15px;
+    border: rgba(0, 19, 104, 0.406) solid;
     text-decoration: none;
 
     transition: 250ms;
@@ -44,7 +45,7 @@ a:hover {
 
 .imcalc,
 .formula {
-    background-color: #0f0443;
+    background-color: #000A81;
     padding: 15px;
 
     width: 100%;
@@ -119,7 +120,7 @@ input:hover {
 .imgbody {
     padding: 20px; 
     border: 2px solid #ffffff;
-    background-color: #0f0443;
+    background-color: #000A81;
     border-radius: 20px;
     margin: 10px auto;
     max-width: 600px;

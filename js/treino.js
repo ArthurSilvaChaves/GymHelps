@@ -21,10 +21,10 @@ function criarDia(nomeDia, musculo, exercicios) {
         const li = document.createElement("li");
 
         li.innerHTML = `
-            <input value="${ex.nome}">
-            <input value="${ex.series}">
-            <input value="${ex.reps}">
-            <input value="${ex.carga}">
+            <input value="${ex.nome}" placeholder="Nome do exercício">
+            <input value="${ex.series}" placeholder="Séries">
+            <input value="${ex.reps}" placeholder="Reps">
+            <input value="${ex.carga}" placeholder="Carga">
             <button onclick="this.parentElement.remove()" class="addbtn">X</button>
         `;
 
@@ -81,10 +81,10 @@ function addexerc(botao){
     const li = document.createElement("li")
 
     li.innerHTML = `
-        <input placeholder="nome do exercicio">
-        <input placeholder="series">
-        <input placeholder="repeticoes">
-        <input placeholder="carga">
+        <input placeholder="Nome do exercício">
+        <input placeholder="Séries">
+        <input placeholder="Reps">
+        <input placeholder="Carga">
         <button onclick="this.parentElement.remove()" class="addbtn">X</button>
     `;
 
