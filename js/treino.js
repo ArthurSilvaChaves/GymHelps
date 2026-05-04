@@ -1,5 +1,38 @@
+window.onload = load;
+document.addEventListener("input",save);
+
 const dias = ["Segunda","Terça","Quarta","Quinta","Sexta","Sábado","Domingo"]
 const container = document.getElementById("semana")
+
+function criarDia(nomeDia, musculo, exercicios) {
+    const div = document.createElement("div");
+    div.className = "dia";
+
+    div.innerHTML = `
+        <h2>${nomeDia}</h2>
+        <input value="${musculo}" placeholder="Músculo (ou descanso)">
+        <button onclick="addexerc(this)">+Exercicio</button>
+        <ol></ol>
+    `;
+
+    const ol = div.querySelector("ol");
+
+    exercicios.forEach(ex => {
+        const li = document.createElement("li");
+
+        li.innerHTML = `
+            <input value="${ex.nome}">
+            <input value="${ex.series}">
+            <input value="${ex.reps}">
+            <input value="${ex.carga}">
+            <button onclick="this.parentElement.remove()" class="addbtn">X</button>
+        `;
+
+        ol.appendChild(li);
+    });
+
+    container.appendChild(div);
+}
 
 function save() {
     const data = [];
@@ -21,16 +54,24 @@ function save() {
             });
         });
 
-        dados.push({Nomedia, musculo,exercicios})
+        data.push({nomeDia, musculo,exercicios})
     });
 
-    localStorage.setItem("treino",JSON.stringify(dados))
+    localStorage.setItem("treino",JSON.stringify(data))
 }
 
 function load(){
-    const dados = JSON.parse(localStorage.getItem("treino"));
+    const data = JSON.parse(localStorage.getItem("treino"));
+    container.innerHTML = "";
 
-    if(!dados) return;
+    if(!data) {
+        dias.forEach(dia => criarDia(dia,"",[]));
+        return;    
+    }
+
+    data.forEach(dia => {
+        criarDia(dia.nomeDia,dia.musculo,dia.exercicios);
+    })
 }
 
 function addexerc(botao){
@@ -49,18 +90,3 @@ function addexerc(botao){
 
     ol.appendChild(li)
 }
-
-dias.forEach(dia => {
-    const div = document.createElement("div");
-
-    div.className = "dia";
-
-    div.innerHTML = `
-        <h2>${dia}</h2>
-        <input placeholder="Musculo (ou descanso)">
-        <button onclick="addexerc(this)">+Exercicio</button>
-        <ol></ol>
-    `;
-
-    container.appendChild(div);
-})
