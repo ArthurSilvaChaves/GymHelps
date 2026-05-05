@@ -41,6 +41,10 @@ a:hover {
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.519);
 }
 
+a:active {
+    box-shadow: none;
+}
+
 #semana{
     font-size: 1.5rem;
     color: white;
