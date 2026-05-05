@@ -1,8 +1,8 @@
 window.onload = load;
 document.addEventListener("input",save);
 
-const dias = ["Segunda","Terça","Quarta","Quinta","Sexta","Sábado","Domingo"]
-const container = document.getElementById("semana")
+const dias = ["Segunda","Terça","Quarta","Quinta","Sexta","Sábado","Domingo"];
+const container = document.getElementById("semana");
 
 function criarDia(nomeDia, musculo, exercicios) {
     const div = document.createElement("div");
