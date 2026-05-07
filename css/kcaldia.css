@@ -54,6 +54,7 @@ a:active {
 }
 
 #calculadora h2{
+    cursor: default;
     background-color:#00b08d;
     padding: 10px;
     margin: 10px;
@@ -80,4 +81,20 @@ a:active {
 
 #calculadora button:active{
     box-shadow: none;
+}
+
+#calculadora input{
+    width: 18.5rem;
+    font-size: 1.5rem;
+    border: solid #00b08d 2px;
+    background-color: #1a836e;
+    transition: 250ms;
+    color: black;
+    padding: 4px;
+}
+
+#calculadora p{
+    margin: 15px;
+    font-size: 1.5rem;
+    cursor: default;
 }
