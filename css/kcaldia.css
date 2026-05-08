@@ -46,11 +46,18 @@ a:active {
     box-shadow: none;
 }
 
+.container{
+    display: flex;
+}
+
 #calculadora{
     display: grid;
     padding: 10px;
     background-color:#1a836e;
     margin: 10px;
+    width: 50%;
+    border: antiquewhite 2px solid;
+    border-radius: 20px;
 }
 
 #calculadora h2{
@@ -84,7 +91,7 @@ a:active {
 }
 
 #calculadora input{
-    width: 18.5rem;
+    width: 6rem;
     font-size: 1.5rem;
     border: solid #00b08d 2px;
     background-color: #1a836e;
@@ -97,4 +104,25 @@ a:active {
     margin: 15px;
     font-size: 1.5rem;
     cursor: default;
+}
+
+#indice{
+    display:block;
+    padding: 10px;
+    background-color:#1a836e;
+    margin: 10px;
+    width: 50%;
+    border: antiquewhite 2px solid;
+    border-radius: 20px;
+}
+
+#indice h1{
+    cursor: default;
+    background-color:#00b08d;
+    padding: 10px;
+    margin: 10px;
+    width: fit-content;
+    height: fit-content;
+    border: solid black;
+    border-radius: 20px;
 }
