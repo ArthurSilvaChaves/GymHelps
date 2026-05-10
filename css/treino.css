@@ -138,4 +138,8 @@ input:hover{
         text-align: center;
         width: 100%; 
     }
+    #semana{
+        display: grid;
+        width: 90%;
+    }
 }
