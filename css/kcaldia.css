@@ -92,7 +92,7 @@ a:active {
 }
 
 #calculadora input{
-    width: 6rem;
+    width: 100%;
     font-size: 1.5rem;
     border: solid #00b08d 2px;
     background-color: #1a836e;

@@ -1,12 +1,14 @@
 window.onload = load;
-document.addEventListener("input",save)
+
+let timeout;
+
+document.addEventListener("input",() => {
+    clearTimeout(timeout);
+    timeout = setTimeout(save,500);
+});
 
 const refeicoes = ["Café da Manhã","Almoço","Jantar","Outra"];
 const container = document.getElementById("calculadora");
-
-// const alimentos = [
-//     ["arroz branco cozido",1.3]
-// ]
 
 
 function criarRefeicao(nomeRefeicao,alimentos =[]){
@@ -33,7 +35,7 @@ function criarRefeicao(nomeRefeicao,alimentos =[]){
 
         li.innerHTML = `
                 <input value="${alimento.nome}" placeholder="nome" type="text"/>
-                <input value="${alimento.kcal}" placeholder="kcal" type="number" class="kcal"/>
+                <input value="${alimento.kcal}" placeholder="kcal/100g" type="number" class="kcal"/>
                 <input value="${alimento.g}" placeholder="g" type="number" class="g"/>
 
                 <button onclick="this.parentElement.remove()">X</button>
@@ -55,7 +57,7 @@ function addref(btn){
 
     li.innerHTML = `
         <input placeholder="nome" type="text"/>
-        <input placeholder="kcal" type="number" class="kcal"/>
+        <input placeholder="kcal/100g" type="number" class="kcal"/>
         <input placeholder="g" type="number" class="g"/>
         <button onclick="this.parentElement.remove(); save()">X</button>
 
@@ -84,7 +86,7 @@ function calckcal(botao) {
 
     const p  = refeicao.querySelector("p");
 
-    p.textContent = `Total: ${totalKcal}kcal e ${totalG}g`
+    p.textContent = `Total: ${totalKcal/100 * totalG}kcal `
 }
 
 function save(){

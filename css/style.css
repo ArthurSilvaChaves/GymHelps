@@ -47,6 +47,19 @@ a:active {
     box-shadow: none;
 }
 
+.info{
+    padding: 10px;
+    color: white;
+    background-color: #00821a2a;
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+.info p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+}
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column; 

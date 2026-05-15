@@ -10,7 +10,19 @@ function criarDia(nomeDia, musculo, exercicios) {
 
     div.innerHTML = `
         <h2>${nomeDia}</h2>
-        <input value="${musculo}" placeholder="Músculo (ou descanso)">
+        <input list="musculos" value="${musculo}" placeholder="Músculo (ou descanso)">
+        
+        <datalist id="musculos">
+            <option value="Descanso">
+            <option value="Peito">
+            <option value="Costas">
+            <option value="Bíceps">
+            <option value="Tríceps">
+            <option value="Ombro">
+            <option value="Perna">
+            <option value="Panturrilha">
+        </datalist>
+        
         <button onclick="addexerc(this)">+Exercicio</button>
         <ol></ol>
     `;
