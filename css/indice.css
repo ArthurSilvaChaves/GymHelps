@@ -31,7 +31,7 @@ a {
 
     padding: 10px 15px;
     border-radius: 15px;
-    border: solid #4f4d10a2;
+    border: solid #4f4d10;
     text-decoration: none;
 
     transition: 250ms;
@@ -46,3 +46,32 @@ a:hover {
 a:active {
     box-shadow: none;
 }
+
+#listaAlimentos{
+    cursor: default;
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.card{
+    text-align: center;
+    color: white;
+    background-color: #4f4d10;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    border: #ffff solid 2px;
+    transition: 500ms;
+}
+
+.card:hover .card{
+    font-size: 0.5rem;
+    opacity: 0.7;
+}
+
+.card:hover{
+    font-size: 2rem;
+}
+
