@@ -69,24 +69,24 @@ function addref(btn){
 
 function calckcal(botao) {
     const refeicao = botao.parentElement;
-
     const inputKcal = refeicao.querySelectorAll(".kcal");
     const inputG = refeicao.querySelectorAll(".g");
+    const p  = refeicao.querySelector("p");
 
+    let final = 0;
     let totalKcal = 0;
     let totalG = 0;
 
-    inputKcal.forEach(input => {
-        totalKcal += Number(input.value);
-    })
 
-    inputG.forEach(input => {
-        totalG += Number(input.value);
-    })
+    inputKcal.forEach((input,index) => {
+        const kcal = Number(input.value);
+        const g = Number(inputG[index].value);
 
-    const p  = refeicao.querySelector("p");
+        final += (kcal/100) * g;
+    });
 
-    p.textContent = `Total: ${totalKcal/100 * totalG}kcal `
+
+    p.textContent = `Total: ${final}kcal `
 }
 
 function save(){

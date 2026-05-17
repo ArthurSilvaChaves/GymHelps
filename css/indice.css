@@ -73,7 +73,7 @@ a:active {
 }
 
 
-.card:hover{
+.card.ativo{
     font-size: 1.5rem;
     padding: 20px;
     transform: scale(1.1);
