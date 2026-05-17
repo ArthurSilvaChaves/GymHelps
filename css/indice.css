@@ -1,8 +1,12 @@
 body {
     /* #178100
     #008219 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #817C00;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
 }
 
@@ -25,6 +29,7 @@ body {
 
 
 a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem; 
     background-color: #4F4D10;
     color: beige;
@@ -48,14 +53,16 @@ a:active {
 }
 
 #listaAlimentos{
+    width: 100%;
     cursor: default;
     display: flex;
     flex-direction:column-reverse;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
 }
 
 .card{
+    width: 67%;
     text-align: center;
     color: white;
     background-color: #4f4d10;
@@ -66,12 +73,52 @@ a:active {
     transition: 500ms;
 }
 
-.card:hover .card{
-    font-size: 0.5rem;
-    opacity: 0.7;
-}
 
 .card:hover{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    padding: 20px;
+    transform: scale(1.25);
+    margin: 30px;
+    box-shadow: 10px 10px 10px 10px rgb(0, 0, 0);
 }
 
+button{
+    font-size: 1.5rem;
+    margin: 10px;
+    border: none;
+    padding: 10px;
+    border-radius: 1cap;
+    transition: 250ms;
+    cursor: pointer;
+}
+
+button:hover{
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+button:active{
+    box-shadow: none;
+}
+
+input{
+    font-size: 1.3rem;
+    text-align: center;
+    border: none;
+    border-radius: 1cap;
+    padding: 10px;
+    height: 2vh;
+    width: 67%;
+}
+
+@media (max-width: 768px){
+    .navbar {
+        flex-direction: column; 
+        align-items: stretch;
+    }
+
+    a {
+        font-size: 1rem;
+        text-align: center;
+        width: 100%; 
+    }
+}

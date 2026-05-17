@@ -1,10 +1,10 @@
-alimentos = [
+const alimentos = [
     {
-        "nome":"Arroz",
+        "nome":"Arroz Branco Cozido",
         kcal:130
     },
     {
-        "nome":"Feijão",
+        "nome":"Feijão Carioca",
         kcal:76
     },
     {
@@ -18,19 +18,43 @@ alimentos = [
     {
         nome:"Batata Inglesa Cozida",
         kcal:65
+    },
+    {
+        nome:"Ovo de Galinha Cozido",
+        kcal:77
+    },
+    {
+        nome:"Pão Francês",
+        kcal:300
     }
 ];
 
+const busca = document.getElementById("busca");
 const lista = document.getElementById("listaAlimentos");
 
-alimentos.forEach(alimento => {
-    const card = document.createElement("div");
-    card.className = "card";
+function mostrarAlimentos(listaAlimentos){
+    lista.innerHTML = "";
 
-    card.innerHTML = `
-        <h2>Alimento: <br/> ${alimento.nome}</h2>
-        <p>Kcal/100g: <br/> ${alimento.kcal}</p>
-    `;
+    listaAlimentos.forEach(alimento => {
 
-    lista.appendChild(card);
+        lista.innerHTML += `
+            <div class="card">
+                <h2>Alimento: <br/> ${alimento.nome}</h2>
+                <p>Kcal/100g: <br/> ${alimento.kcal}</p>
+            </div>
+        `;
+    });
+
+};
+
+mostrarAlimentos(alimentos);
+
+busca.addEventListener("input", () => {
+    const valor = busca.value.toLowerCase();
+    
+    const filtro = alimentos.filter(alimento => 
+        alimento.nome.toLowerCase().includes(valor)
+    );
+
+    mostrarAlimentos(filtro);
 });
