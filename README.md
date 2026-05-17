@@ -16,4 +16,8 @@ A página que traz os músculos (Bíceps braquial, peito, tríceps, dorsal, ombr
 
 ## 4. Rotina de treinos
 
-a ultima página foi feita de forma simples para ajudar a montar uma rotina de treino, adicionando exercícios, séries, cargas e repetições para diferentes dias e treinos e se organizar melhor entre dia de treino e descanso, além de computar cargas para melhor progressão.
+Esta página foi feita de forma simples para ajudar a montar uma rotina de treino, adicionando exercícios, séries, cargas e repetições para diferentes dias e treinos e se organizar melhor entre dia de treino e descanso, além de computar cargas para melhor progressão.
+
+## 5. Calorias Diárias
+
+Esta parte do site ajuda de forma parecida com a anterior (Rotina de treinos), mas agora com relação a dieta. Lá você poderá anotar em determinadas refeições o que você ingeriu, quantas calorias aquele alimento tinha em 100g e quantas gramas você comeu. Útil para ter controle ou consciência da dieta que está sendo feita. Dentro dessa página ainda, clicando no botão vertical "Índice", você será direcionado para página que irá permitir ver e procurar a informação de kcal em alguns alimentos, o que facilita para montar ou manter informações mais concretas sobre os alimentos
