@@ -66,6 +66,13 @@ const cards = document.querySelectorAll(".card");
 
 cards.forEach(card => {
     card.addEventListener("click",() => {
-        card.classList.toggle("ativo");
-    })
-})
+
+        cards.forEach(c => {
+            c.classList.remove("ativo");
+        })
+
+        card.classList.add("ativo");
+    
+    });
+
+});
