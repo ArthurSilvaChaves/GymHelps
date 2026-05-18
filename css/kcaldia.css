@@ -23,7 +23,7 @@ body {
     gap: 10px; 
 }
 
-a {
+.navbar a {
     font-size: 2rem; 
     background-color: #00aa88d2;
     color: beige;
@@ -36,19 +36,58 @@ a {
     transition: 250ms;
 }
 
-a:hover {
+.navbar a:hover {
     background-color: rgb(195, 255, 197);
     color: black;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.519);
 }
 
-a:active {
+.navbar a:active {
     box-shadow: none;
+}
+
+.footer-bar{
+    font: 1.5rem;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a836e;
+}
+
+.footer-bar a{
+    margin: 10px;
+    padding: 10px;
+    color: white;
 }
 
 .container{
     display: flex;
     justify-content: center;
+}
+
+.container a{
+    font-size: 2rem; 
+    background-color: #00aa88d2;
+    color: beige;
+
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: solid #00b08d;
+    text-decoration: none;
+
+    transition: 250ms; 
+}
+
+.container a:hover{
+    background-color: rgb(195, 255, 197);
+    color: black;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.519);
+}
+
+.container a:active{
+    box-shadow: none;
 }
 
 #calculadora{
