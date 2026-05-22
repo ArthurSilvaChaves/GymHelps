@@ -78,6 +78,7 @@ body {
 }
 
 .card{
+    cursor: pointer;
     width: 67%;
     text-align: center;
     color: white;

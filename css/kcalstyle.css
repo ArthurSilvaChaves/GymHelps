@@ -1,5 +1,5 @@
 body {
-    background-color: #82000B;
+    background-color: #363333;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     color: white;
     margin: 0;
@@ -12,8 +12,8 @@ body {
     align-items: center;
     flex-wrap: wrap;
 
-    background-color: #811400;
-    color: #811400;
+    background-color: #686362;
+    color: #686362;
     border: 2px solid antiquewhite;
 
     font-size: 1.5rem;
@@ -26,12 +26,12 @@ body {
 
 .navbar a{
     font-size: 2rem;
-    background-color: rgba(104, 0, 0, 0.406);
+    background-color: #ff2a00;
     color: beige;
 
     padding: 10px 15px;
     border-radius: 15px;
-    border: rgba(104, 0, 0, 0.406) solid;
+    border: #363333 solid;
     text-decoration: none;
 
     transition: 250ms;
@@ -54,10 +54,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #811400;
+    background-color: #686362;
 }
 
 .footer-bar a{
+    background-color: #ff2a00;
     margin: 10px;
     padding: 10px;
     color: white;
@@ -71,14 +72,14 @@ p {
 
 input {
     font-size: 1.2rem;
-    border: 2px solid #ff0000;
+    border: 2px solid #363333;
     border-radius: 10px;
 
     width: 100%;
     max-width: 200px;
 
     padding: 8px;
-    background-color: #730000;
+    background-color: #ff2a00;
     color: white;
 }
 
@@ -89,7 +90,7 @@ input:hover {
 
 select {
     font-size: 1.1rem;
-    background-color: #9a0a0a;
+    background-color: #ff2a00;
     border: none;
     color: antiquewhite;
 
@@ -107,7 +108,7 @@ select:hover {
 h1 {
     font-size: 1.5rem;
     color: antiquewhite;
-    background-color: #771200;
+    background-color: #ff2a00;
 
     width: fit-content;
     padding: 10px;
@@ -121,23 +122,29 @@ h1 {
     font-size: 1.2rem;
     cursor: pointer;
 
-    border: 2px solid white;
+    border: 2px solid #363333;
     border-radius: 20px;
     padding: 10px;
 
-    background-color: #730000;
+    background-color: #ff2a00;
     color: white;
+
+    transition: 250ms;
 }
 
 .calcbutton:hover {
-    background-color: #ff0000;
-    transition: 200ms;
+    color: black;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px 5px black;
 }
 
+.calcbutton:active{
+    box-shadow: none;
+}
 
 .calc,
 .information {
-    background-color: #811400;
+    background-color: #686362;
     padding: 15px;
 
     width: 100%;
