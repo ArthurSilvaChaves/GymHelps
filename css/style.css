@@ -89,4 +89,8 @@ body {
         text-align: center;
         width: 100%; 
     }
+
+    .info{
+        width: fit-content;
+    }
 }

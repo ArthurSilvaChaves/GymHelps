@@ -1,5 +1,5 @@
 body {
-    background-color: #a86500;
+    background-color: #363333;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     color: white;
     margin: 0;
@@ -12,8 +12,8 @@ body {
     align-items: center;
     flex-wrap: wrap;
 
-    background-color: #db7900;
-    color: #db7900;
+    background-color: #686362;
+    color: #686362;
     border: 2px solid antiquewhite;
 
     font-size: 1.5rem;
@@ -25,19 +25,20 @@ body {
 
 .navbar a {
     font-size: 2rem;
-    background-color: rgba(255, 149, 0, 0.406);
+    background-color: #ff2a00;
     color: beige;
 
     padding: 10px 15px;
     border-radius: 15px;
-    border: rgba(255, 149, 0, 0.406) solid;
+    border: #363333 solid;
     text-decoration: none;
 
     transition: 250ms;
 }
 
 .navbar a:hover {
-    background-color: rgb(255, 233, 195);
+    border-color: #686362;
+    background-color: white;
     color: black;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.519);
 }
@@ -53,10 +54,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #db7900;
+    background-color: #686362;
 }
 
 .footer-bar a{
+    background-color: #ff2a00;
     margin: 10px;
     padding: 10px;
     color: white;
@@ -71,7 +73,7 @@ body {
 
 .accordion-btn {
     margin: 10px 0;
-    background-color: #db7900;
+    background-color: #ff2a00;
     color: white;
 
     border: none;
@@ -86,8 +88,8 @@ body {
 }
 
 .accordion-btn:hover {
-    background-color: #ffbe5e;
-    color: black;
+    background-color: white;
+    color: black; 
 }
 
 
@@ -96,7 +98,7 @@ body {
     overflow: hidden;
 
     border-radius: 10px;
-    background-color: #db7900;
+    background-color: #ff2a00;
 
     transition: max-height 0.4s ease;
     padding: 0 10px;

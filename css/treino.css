@@ -1,5 +1,5 @@
 body {
-    background-color: #810076;
+    background-color: #363333;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     margin: 0;
 }
@@ -10,8 +10,8 @@ body {
     align-items: center;
     flex-wrap: wrap; 
 
-    background-color: #5D0082;
-    color: #5D0082;
+    background-color: #686362;
+    color: #686362;
     border: 2px solid antiquewhite;
 
     font-size: 1.5rem; 
@@ -24,19 +24,20 @@ body {
 
 .navbar a {
     font-size: 2rem; 
-    background-color: rgba(99, 0, 104, 0.406);
+    background-color: #ff2a00;
     color: beige;
 
     padding: 10px 15px;
     border-radius: 15px;
-    border: rgba(99, 0, 104, 0.406) solid;
+    border: #363333 solid;
     text-decoration: none;
 
     transition: 250ms;
 }
 
 .navbar a:hover {
-    background-color: rgb(255, 195, 254);
+    border-color: #686362;
+    background-color: white;
     color: black;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.519);
 }
@@ -52,10 +53,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #5D0082;
+    background-color: #686362;
 }
 
 .footer-bar a{
+    background-color: #ff2a00;
     margin: 10px;
     padding: 10px;
     color: white;
@@ -65,7 +67,7 @@ body {
     font-size: 1.5rem;
     color: white;
     display: grid;
-    background-color: #5D0082;
+    background-color: #686362;
     margin: 10px;
     padding: 10px;
     gap: 10px;
@@ -77,11 +79,11 @@ body {
 h2{
     font-size: 1.5rem;
     color: antiquewhite;
-    background-color: #350443;
+    background-color: #ff2a00;
 
     width: fit-content;
     padding: 10px;
-    border: 2px solid white;
+    border: 2px solid #363333;
     border-radius: 20px;
 }
 
@@ -90,14 +92,14 @@ button{
     padding: 10px;
     border-radius: 20px;
     font-size: 1.5rem;
-    border: solid 2px #4f006e;
-    background: rgba(99, 0, 104, 0.406);
+    border: solid 2px #363333;
+    background: #ff2a00;
     transition: 250ms;
     cursor: pointer;
 }
 
 button:hover{
-    background-color: rgb(255, 195, 254);
+    background-color: white;
     color: black;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.519);
 }
@@ -108,20 +110,16 @@ button:active{
 
 input{
     font-size: 1.2rem;
-    border: 2px solid #ff00ff;
+    border: 2px solid #363333;
     border-radius: 10px;
 
     width: 100%;
     max-width: 250px;
 
     padding: 8px;
-    background-color: #6d0073;
+    background-color: #ff2a00;
     color: white;
     transition: 250ms;
-}
-
-input:hover{
-    border: 2px solid #ffabff;
 }
 
 .addbtn{
@@ -132,12 +130,12 @@ input:hover{
     border-radius: 20px;
     padding: 20px;
 
-    background-color: #c20000;
+    background-color: red;
     color: white;
 }
 
 .addbtn:hover{
-    background-color: rgb(255, 156, 156);
+    background-color: white;
     color: black;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.519);
 }

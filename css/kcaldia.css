@@ -1,7 +1,7 @@
 body {
     /* #178100
     #008219 */
-    background-color: #28423D;
+    background-color: #363333;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     margin: 0;
 }
@@ -12,8 +12,8 @@ body {
     align-items: center;
     flex-wrap: wrap; 
 
-    background-color: #1a836e;
-    color: #1a836e;
+    background-color: #686362;
+    color: #686362;
     border: 2px solid antiquewhite;
 
     font-size: 1.5rem; 
@@ -25,19 +25,20 @@ body {
 
 .navbar a {
     font-size: 2rem; 
-    background-color: #00aa88d2;
+    background-color: #ff2a00;
     color: beige;
 
     padding: 10px 15px;
     border-radius: 15px;
-    border: solid #00b08d;
+    border: solid #363333;
     text-decoration: none;
 
     transition: 250ms;
 }
 
 .navbar a:hover {
-    background-color: rgb(195, 255, 197);
+    border-color: #686362;
+    background-color: white;
     color: black;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.519);
 }
@@ -53,10 +54,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1a836e;
+    background-color: #686362;
 }
 
 .footer-bar a{
+    background-color: #ff2a00;
     margin: 10px;
     padding: 10px;
     color: white;
@@ -69,19 +71,19 @@ body {
 
 .container a{
     font-size: 2rem; 
-    background-color: #00aa88d2;
+    background-color: #ff2a00;
     color: beige;
 
     padding: 10px 15px;
     border-radius: 15px;
-    border: solid #00b08d;
+    border: solid #686362;
     text-decoration: none;
 
     transition: 250ms; 
 }
 
 .container a:hover{
-    background-color: rgb(195, 255, 197);
+    background-color: white;
     color: black;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.519);
 }
@@ -93,7 +95,7 @@ body {
 #calculadora{
     display: grid;
     padding: 10px;
-    background-color:#1a836e;
+    background-color:#686362;
     margin: 10px;
     width: 80%;
     border: antiquewhite 2px solid;
@@ -102,11 +104,11 @@ body {
 
 #calculadora h2{
     cursor: default;
-    background-color:#00b08d;
+    background-color:#ff2a00;
     padding: 10px;
     margin: 10px;
     width: max-content;
-    border: solid black;
+    border: solid #363333;
     border-radius: 20px;
 }
 
@@ -115,7 +117,7 @@ body {
     font-size: 1rem;
     padding: 10px;
     width: 100px;
-    background-color:#00b08d;
+    background-color:#ff2a00;
     border: none;
     border-radius: 20px;
     transition: 250ms;
@@ -131,13 +133,14 @@ body {
 }
 
 #calculadora input{
-    width: 100%;
+    width: 67%;
     font-size: 1.5rem;
-    border: solid #00b08d 2px;
-    background-color: #1a836e;
+    border: solid #363333 2px;
+    background-color: #ff2a00;
     transition: 250ms;
     color: black;
     padding: 4px;
+    margin-top: 10px;
 }
 
 #calculadora p{
@@ -149,7 +152,7 @@ body {
 #indice{
     display:block;
     padding: 10px;
-    background-color:#1a836e;
+    background-color:#ff2a00;
     margin: 10px;
     width: 50%;
     border: antiquewhite 2px solid;

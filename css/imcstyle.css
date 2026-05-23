@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(0, 94, 94);
+    background-color: #363333;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     color: white;
     margin: 0;
@@ -12,8 +12,8 @@ body {
     justify-content: center;
     gap: 10px;
 
-    background-color: #000A81;
-    color: #000A81;
+    background-color: #686362;
+    color: #686362;
     border: 2px solid antiquewhite;
 
     font-size: 1.5rem;
@@ -25,20 +25,21 @@ body {
 
 .navbar a {
     font-size: 2rem;
-    background-color: rgba(0, 19, 104, 0.406);
+    background-color: #ff2a00;
     color: beige;
 
     padding: 10px 15px;
     border-radius: 15px;
-    border: rgba(0, 19, 104, 0.406) solid;
+    border: #363333 solid;
     text-decoration: none;
 
     transition: 250ms;
 }
 
 .navbar a:hover {
-    background-color: rgb(195, 201, 255);
+    background-color: white;
     color: black;
+    border-color: #686362;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.519);
 }
 
@@ -53,10 +54,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000A81;
+    background-color: #686362;
 }
 
 .footer-bar a{
+    background-color: #ff2a00;
     margin: 10px;
     padding: 10px;
     color: white;
@@ -64,7 +66,7 @@ body {
 
 .imcalc,
 .formula {
-    background-color: #000A81;
+    background-color: #686362;
     padding: 15px;
 
     width: 100%;
@@ -79,11 +81,11 @@ body {
 h1 {
     font-size: 1.5rem;
     color: antiquewhite;
-    background-color: #0f0443;
+    background-color: #ff2a00;
 
     width: fit-content;
     padding: 10px;
-    border: 2px solid white;
+    border: 2px solid #363333;
     border-radius: 20px;
 }
 
@@ -95,39 +97,40 @@ p {
 
 input {
     font-size: 1.2rem;
-    border: 2px solid #0015ff;
+    border: 2px solid #363333;
     border-radius: 10px;
 
     width: 100%;
     max-width: 200px;
 
     padding: 8px;
-    background-color: #000a73;
+    background-color: #ff2a00;
     color: white;
 }
-
-input:hover {
-    border-color: #ffffff;
-}
-
 
 .calcbtn {
     margin-top: 10px;
     font-size: 1.2rem;
     cursor: pointer;
 
-    border: 2px solid white;
+    border: 2px solid #363333;
     border-radius: 20px;
     padding: 10px;
 
-    background-color: #000a73;
+    background-color: #ff2a00;
     color: white;
+    transition: 250ms;
 }
 
 .calcbtn:hover {
-    background-color: #001aff;
+    color: black;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px black;
 }
 
+.calcbtn:active{
+    box-shadow: none;
+}
 
 .bodyimg {
     width: 100%;        
@@ -139,7 +142,7 @@ input:hover {
 .imgbody {
     padding: 20px; 
     border: 2px solid #ffffff;
-    background-color: #000A81;
+    background-color: #686362;
     border-radius: 20px;
     margin: 10px auto;
     max-width: 600px;
