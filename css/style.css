@@ -9,43 +9,55 @@ body {
 .navbar {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap; 
 
-    background-color: #686362;
-    color: #686362;
-    border: 2px solid antiquewhite;
+    background-color: #ff2a00;
 
-    font-size: 1.5rem; 
+    font-size: 0.5rem; 
     padding: 10px;
-    border-radius: 20px;
-    margin: 10px;
-    gap: 10px; 
+    margin: 0px;
+    gap: 0px; 
 }
 
 
 .navbar a {
+    position: relative;
     font-size: 2rem; 
     background-color: #ff2a00;
     color: beige;
 
-    padding: 10px 15px;
-    border-radius: 15px;
-    border: solid #363333;
+    padding: 10px 10px;
     text-decoration: none;
 
+    overflow: hidden;
     transition: 250ms;
+    z-index: 1;
+}
+
+.navbar a::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 0%;
+    height: 100%;
+
+    background: #363333;
+
+    z-index: -1;
+
+    transition: width 0.3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
 }
 
 .navbar a:hover {
     background-color: #ffffff;
     border-color: #686362;
-    color: black;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.519);
-}
-
-.navbar a:active {
-    box-shadow: none;
 }
 
 .info{
