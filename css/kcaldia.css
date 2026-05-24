@@ -36,21 +36,21 @@ body {
     content: "";
 
     position: absolute;
-    top: 0;
-    left: 0;
 
-    width: 0%;
-    height: 100%;
+    inset: 0;
 
     background: #363333;
 
     z-index: -1;
 
-    transition: width 0.3s;
+    transform: scaleX(0);
+    transform-origin: center;
+
+    transition: transform 0.3s ease;
 }
 
 .navbar a:hover::before{
-    width: 100%;
+    transform: scaleX(1);
 }
 
 .navbar a:hover {
