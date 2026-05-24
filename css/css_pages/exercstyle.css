@@ -5,57 +5,6 @@ body {
     margin: 0;
 }
 
-
-.navbar {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    background-color: #ff2a00;
-
-    font-size: 0.5rem;
-    padding: 10px;
-}
-
-.navbar a {
-    position: relative;
-    font-size: 2rem; 
-    background-color: #ff2a00;
-    color: beige;
-
-    padding: 10px 10px;
-    text-decoration: none;
-
-    overflow: hidden;
-    transition: 250ms;
-    z-index: 1;
-}
-
-.navbar a::before {
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    background: #363333;
-
-    z-index: -1;
-
-    transform: scaleX(0);
-    transform-origin: center;
-
-    transition: transform 0.3s ease;
-}
-
-.navbar a:hover::before{
-    transform: scaleX(1);
-}
-.navbar a:hover {
-    background-color: #ffffff;
-    border-color: #686362;
-}
-
 .footer-bar{
     font: 1.5rem;
     padding: 10px;
