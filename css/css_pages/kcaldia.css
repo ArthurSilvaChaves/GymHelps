@@ -26,34 +26,52 @@ body {
 
 .container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .container a{
+    position: relative;
     font-size: 2rem; 
-    background-color: #686362;
+    background-color: #ff2a00;
     color: beige;
 
-    padding: 10px 15px;
-    border-radius: 15px;
-    border: solid #686362;
+    padding: 10px 10px;
     text-decoration: none;
 
-    transition: 250ms; 
+    overflow: hidden;
+    transition: 250ms;
+    z-index: 1;
+
+    margin: 10px;
 }
 
-.container a:hover{
-    background-color: white;
-    color: black;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.519);
+.container a::before{
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: #686362;
+
+    z-index: -1;
+
+    transform: scaleY(0);
+    transform-origin: center;
+
+    transition: transform 0.3s ease;
 }
 
-.container a:active{
-    box-shadow: none;
+.container a:hover::before{
+    transform: scaleY(1);
 }
+
 
 #calculadora{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     padding: 10px;
     background-color:#686362;
     margin: 10px;
