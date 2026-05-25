@@ -9,34 +9,64 @@ body {
 .main {
     display: flex;
     align-items: center;
-}
-
-.imgdiv{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    color: #ffff;
+    flex-direction: column;
 }
 
-.imgdiv img{
-    border: #686362 solid 5px;
-}
-
-.info{
-    width: 50%;
+.hero{
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #686362;
     padding: 10px;
     color: white;
-    font-size: 1.2rem;
-    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
 }
 
-.info p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.hero h1{
+    border-radius: 1cap;
+    background-color: #ff2a00;
+    width: 100%;
+}
+
+.hero button{
+    padding: 3px;
+    width: 100%;
+    background-color: #ff2a00;
+    border: none;
+    color: white;
     font-size: 1.5rem;
+    border-radius: 1cap;
+    cursor: pointer;
+}
+
+.hero button::before{
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: #686362;
+
+    z-index: -1;
+
+    transform: scaleX(0);
+    transform-origin: center;
+
+    transition: transform 0.3s ease;
+}
+
+
+.hero button:hover::before{
+    transform: scaleX(1);
 }
 
 .footer-bar{
+    position: relative;
     font: 1.5rem;
     padding: 10px;
     width: 100%;
