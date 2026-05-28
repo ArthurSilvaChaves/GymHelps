@@ -4,6 +4,7 @@ body {
     background-color: #363333;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     margin: 0;
+    color: white;
 }
 
 .main {
@@ -32,7 +33,8 @@ body {
     width: 100%;
 }
 
-.hero button{
+.hero a{
+    text-decoration: none;
     padding: 3px;
     width: 100%;
     background-color: #ff2a00;
@@ -41,28 +43,63 @@ body {
     font-size: 1.5rem;
     border-radius: 1cap;
     cursor: pointer;
+    transition: 250ms;
 }
 
-.hero button::before{
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    background: #686362;
-
-    z-index: -1;
-
-    transform: scaleX(0);
-    transform-origin: center;
-
-    transition: transform 0.3s ease;
+.hero a:hover{
+    background-color: #363333;
 }
 
+.hero a:active{
+    background-color: #595554;
+}
 
-.hero button:hover::before{
-    transform: scaleX(1);
+.cards{
+    display: flex;
+    width: 100%;
+    cursor: default;
+    background-color: #686362;
+    padding: 5px;
+    border-bottom: #363333 solid 10px;
+}
+
+.tmbcard{
+    height: fit-content;
+    font-size: 1.5rem;
+    margin: 20px;
+    border-radius: 1cap;
+    width: 100%;
+    max-width: 300px;
+    color: #363333;
+    background-color: #363333;
+    padding: 20px;
+    transition: 250ms;
+}
+
+.tmbcard:hover{
+    transform: scale(1.070);
+    color: white;
+    background: linear-gradient(to top,#ff2a00, #595554);
+}
+
+.tmbcard:hover h2{
+    background-color: #363333;
+}
+
+.tmbcard h2{
+    text-align: center;
+    color: white;
+    background-color: #ff2a00;
+    padding: 7px;
+    border-radius: 1cap;
+}
+
+.tmbcard a{
+    color: #363333;
+}
+
+.tmbcard:hover a{
+    color: white;
 }
 
 .footer-bar{
@@ -99,6 +136,9 @@ body {
         width: fit-content;
     }
     .main {
+        flex-direction: column;
+    }
+    .cards{
         flex-direction: column;
     }
 }
