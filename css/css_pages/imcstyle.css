@@ -10,8 +10,8 @@ body {
 }
 
 .footer-bar{
+    margin-top: 7rem;
     position: absolute;
-    bottom: 0;
     font: 1.5rem;
     padding: 10px;
     width: 100%;
@@ -39,6 +39,7 @@ body {
     border: 2px solid white;
     border-radius: 15px;
     margin: 10px auto;
+    height: 100%;
 }
 
 
@@ -124,7 +125,7 @@ input {
     align-items: flex-start;
     flex-wrap: wrap; 
     gap: 20px;
-    flex: 1;
+    height: 100%;
 }
 
 

@@ -15,6 +15,7 @@ body {
 }
 
 .hero{
+    width: 100%;
     border-radius: 10px;
     margin: 10px;
     background-color: #686362;
@@ -29,14 +30,16 @@ body {
 
 .hero h1{
     border-radius: 1cap;
+    padding: 5px;
     background-color: #ff2a00;
-    width: 100%;
+    width: max-content;
 }
 
 .hero a{
     text-decoration: none;
     padding: 3px;
     width: 100%;
+    max-width: 15%;
     background-color: #ff2a00;
     border: none;
     color: white;
@@ -64,7 +67,6 @@ body {
 }
 
 .tmbcard{
-    height: fit-content;
     font-size: 1.5rem;
     margin: 20px;
     border-radius: 1cap;
@@ -96,6 +98,7 @@ body {
 
 .tmbcard a{
     color: #363333;
+    font-size: 1.5rem;
 }
 
 .tmbcard:hover a{
@@ -131,14 +134,17 @@ body {
         text-align: center;
         width: 100%; 
     }
-
-    .info{
-        width: fit-content;
-    }
     .main {
         flex-direction: column;
     }
+    .hero a{
+        max-width: max-content;
+    }
     .cards{
         flex-direction: column;
+    }
+    .tmbcard{
+        width: 100%;
+        margin: 5px;
     }
 }
