@@ -50,7 +50,6 @@ h1 {
 
     width: fit-content;
     padding: 10px;
-    border: 2px solid #363333;
     border-radius: 20px;
 }
 
@@ -61,40 +60,42 @@ p {
 
 
 input {
+    text-align: center;
     font-size: 1.2rem;
-    border: 2px solid #363333;
+    border: none;
     border-radius: 10px;
 
     width: 100%;
     max-width: 200px;
 
-    padding: 8px;
+    padding: 5px;
     background-color: #ff2a00;
     color: white;
 }
+
 
 .calcbtn {
     margin-top: 10px;
     font-size: 1.2rem;
     cursor: pointer;
 
-    border: 2px solid #363333;
-    border-radius: 20px;
-    padding: 10px;
+    padding: 5px 10px 5px 10px;
 
     background-color: #ff2a00;
+    border: none;
+    border-radius: 1cap;
     color: white;
+
     transition: 250ms;
 }
 
 .calcbtn:hover {
-    color: black;
-    background-color: white;
-    box-shadow: 5px 5px 5px 5px black;
+    color: rgb(255, 255, 255);
+    background-color: #c52100;
 }
 
 .calcbtn:active{
-    box-shadow: none;
+    background-color: #840000;
 }
 
 .bodyimg {

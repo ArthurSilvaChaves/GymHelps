@@ -64,7 +64,7 @@ body {
 
 
 .accordion-content.active {
-    max-height: max-content; 
+    max-height: 3000px; 
     padding: 10px;
 }
 

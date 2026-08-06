@@ -29,29 +29,31 @@ p {
 
 
 input {
+    text-align: center;
     font-size: 1.2rem;
-    border: 2px solid #363333;
+    border: none;
     border-radius: 10px;
 
     width: 100%;
     max-width: 200px;
 
-    padding: 8px;
+    padding: 5px;
     background-color: #ff2a00;
     color: white;
 }
 
 
 select {
+    text-align: center;
     font-size: 1.1rem;
     background-color: #ff2a00;
     border: none;
     color: antiquewhite;
 
     border-radius: 20px;
-    padding: 10px;
+    padding: 7px;
     width: 100%;
-    max-width: 220px;
+    max-width: 230px;
 }
 
 select:hover {
@@ -66,7 +68,6 @@ h1 {
 
     width: fit-content;
     padding: 10px;
-    border: 2px solid #363333;
     border-radius: 20px;
 }
 
@@ -76,25 +77,23 @@ h1 {
     font-size: 1.2rem;
     cursor: pointer;
 
-    border: 2px solid #363333;
-    border-radius: 20px;
-    padding: 10px;
+    padding: 5px 10px 5px 10px;
 
     background-color: #ff2a00;
+    border: none;
+    border-radius: 1cap;
     color: white;
 
     transition: 250ms;
 }
 
 .calcbutton:hover {
-    border-color: #686362;
-    color: black;
-    background-color: #ffffff;
-    box-shadow: 5px 5px 5px 5px black;
+    color: rgb(255, 255, 255);
+    background-color: #c52100;
 }
 
 .calcbutton:active{
-    box-shadow: none;
+    background-color: #840000;
 }
 
 .calc,
