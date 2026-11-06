@@ -9,8 +9,10 @@
 .navbar a {
     position: relative;
     font-size: 2rem; 
-    background-color: #686362;
+    background-color: #625c5c;
     color: beige;
+
+    border-radius: 0.401234cap;
 
     padding: 10px 10px;
     text-decoration: none;

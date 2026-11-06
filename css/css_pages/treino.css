@@ -85,22 +85,22 @@ input{
 
 .addbtn{
     margin-top: 10px;
-    font-size: 1.2rem;
     cursor: pointer;
 
-    border-radius: 20px;
-    padding: 20px;
+    border-radius: 1cap;
 
     background-color: red;
     color: white;
 }
 
 .addbtn:hover{
-    background-color: white;
-    color: black;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.519);
+    color: rgb(255, 255, 255);
+    background-color: #c52100;
 }
 
+.addbtn:active {
+    background-color: #840000;
+}
 
 @media (max-width: 768px){
     .navbar {

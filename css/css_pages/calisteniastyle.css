@@ -1,0 +1,35 @@
+body {
+    color: white;
+    margin: 0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color: #161a3f;
+}
+
+.heroMaster{
+    width: 100%;
+    background-color: #090d34;
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.calistenia{
+    padding: 1.5%;
+    width: 40%;
+}
+
+.calistenia h1{
+    font-size: 3rem;
+}
+
+.calistenia p {
+    font-size: 1.5rem;
+}
+
+.exercicios {
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    background-color: #ff2a00;
+}
+
