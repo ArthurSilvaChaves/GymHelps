@@ -26,6 +26,10 @@ body {
     font-size: 1.5rem;
 }
 
+.parentExercicios {
+    background-color: #ff2a00;
+}
+
 .exercicios {
     justify-content: space-between;
     width: 100%;
@@ -33,3 +37,55 @@ body {
     background-color: #ff2a00;
 }
 
+.accordion-btn {
+    margin: 10px 0;
+    background-color: #090d34;
+    color: white;
+
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+
+    cursor: pointer;
+    font-size: 1.5rem; 
+    transition: 0.3s;
+
+    width: 100%;
+}
+
+.accordion-btn:hover {
+    background-color: white;
+    color: black; 
+}
+
+.accordion-content {
+    font-size: 1.5rem;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+
+    border-radius: 10px;
+    background-color: #090d34;
+
+    transition: max-height 0.4s ease;
+    padding: 0 10px;
+}
+
+.accordion-content.active {
+    max-height: 3000px; 
+    padding: 10px;
+}
+
+.accordion-content p {
+    font: 1.5rem;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exercimg {
+    border-radius: 100%;
+}
