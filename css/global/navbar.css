@@ -37,6 +37,8 @@
     transform-origin: center;
 
     transition: transform 0.3s ease;
+
+    border-radius: 0.401234cap;
 }
 
 .navbar a:hover::before{

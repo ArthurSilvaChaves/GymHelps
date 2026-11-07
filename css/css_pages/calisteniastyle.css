@@ -28,14 +28,14 @@ body {
 }
 
 .parentExercicios {
-    background-color: #ff2a00;
+    background-color: #686362;
 }
 
 .exercicios {
     justify-content: space-between;
     width: 100%;
     display: flex;
-    background-color: #ff2a00;
+    background-color: #161a3f;
 }
 
 .accordion-btn {
@@ -94,6 +94,14 @@ body {
 .exerc-cont {
     display: flex;
     gap: 1%;
+}
+
+.image{
+    transition: 100ms;
+}
+
+.image:hover{
+    filter: drop-shadow(-30px 2px 5px black);
 }
 
 @media (max-width: 768px){
