@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,29 +10,30 @@
     .navbar a::before {
         background:#161a3f;
     }
+
+    .menu-toggle:hover{
+    background-color: #161a3f;
+    }
 </style>
 </head>
 <body>
     <nav class="navbar">
-        <ul type="none">
-            <li><a href="index.html"><img src="assets/nav-icons/homenavicon.png" width="30px" alt="home"> Inicio</a>
-        </ul>
-        <ul type="none">
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir">
+        ☰
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html"><img src="assets/nav-icons/homenavicon.png" width="30px" alt="home"> Inicio</a></li>
+
             <li><a href="calculadorakcal.html"><img src="assets/nav-icons/kcalicon.png" width="30px" alt="kcal"> TMB e TDEE</a></li>
-        </ul>
-        <ul type="none">
+        
             <li><a href="calculadorimc.html"><img src="assets/icons/imcicon.png" width="30px" alt="imc"> IMC</a></li>
-        </ul>
-        <ul type="none">
+        
             <li><a href="exercicios.html"><img src="assets/icons/exercicon.png" width="30px" alt="Exercícios e músculos"> Exercícios</a></li>
-        </ul>
-        <ul type="none">
+        
             <li><a href="treinos.html"><img src="assets/icons/workout.png" width="30px" alt="treino"> Treinos</a></li>
-        </ul>
-        <ul type="none">
+    
             <li><a href="caloriasdia.html"><img src="assets/nav-icons/kcaldiaicon.png" width="30px" alt="kcaldia"> Calorias</a></li>
-        </ul>
-        <ul type="none">
+            
             <li><a href="#"><img src="assets/nav-icons/calistenia.webp" width="30px">Calistenia</a></li>
         </ul>
     </nav>
@@ -170,4 +171,5 @@
     </div>
 </body>
 <script src="js/calistenia.js"></script>
+<script src="js/navbar.js"></script>
 </html>
